@@ -30,6 +30,7 @@ jobs:
         name: simple-api-trigger.hpi
         path: target/simple-api-trigger.hpi
 
+# 测试自动增加 release
   release:
     needs: build
     runs-on: ubuntu-latest
