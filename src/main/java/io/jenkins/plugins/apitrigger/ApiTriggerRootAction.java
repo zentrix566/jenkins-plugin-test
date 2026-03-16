@@ -1,7 +1,6 @@
 package io.jenkins.plugins.apitrigger;
 
 import java.io.IOException;
-import java.util.logging.Logger; // 关键：允许匿名访问（由插件内部验证 Token）
 
 import javax.servlet.ServletException;
 
@@ -16,8 +15,6 @@ import hudson.model.UnprotectedRootAction;
  */
 @Extension
 public class ApiTriggerRootAction implements UnprotectedRootAction {
-
-    private static final Logger LOGGER = Logger.getLogger(ApiTriggerRootAction.class.getName());
 
     @Override
     public String getIconFileName() {

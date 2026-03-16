@@ -3,14 +3,12 @@ package io.jenkins.plugins.apitrigger;
 import java.util.Collections;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.logging.Logger;
 
 /**
  * 全局单例，用于追踪所有激活的触发器实例。
  */
 public class ApiTriggerTracker {
 
-    private static final Logger LOGGER = Logger.getLogger(ApiTriggerTracker.class.getName());
     private static final ApiTriggerTracker INSTANCE = new ApiTriggerTracker();
 
     // 使用 ConcurrentHashMap 确保线程安全
