@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Simple API Remote Build Trigger plugin. Trigger multiple Jenkins jobs via a single HTTP endpoint using token authentication.
+</div>
